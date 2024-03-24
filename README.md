@@ -1,8 +1,11 @@
 # JsSpeedTest
 
-JS-SpeedTest는 웹 브라우저에서 실행되는 JavaScript 기반 속도 측정 도구입니다. 이 도구는 Performance API와 Fetch API를 활용하여 네트워크 성능을 평가하고 사용자에게 실시간으로 테스트 결과를 제공합니다. 
+JS-SpeedTest는 웹 브라우저에서 실행되는 JavaScript 기반 속도 측정 도구입니다. 
+
+Performance API와 Fetch API를 활용하여 네트워크 성능을 평가하고 사용자에게 실시간으로 테스트 결과를 제공합니다. 
 사용자는 다양한 파일 크기를 다운로드하여 네트워크 속도를 측정할 수 있으며, 테스트가 완료되면 평균 다운로드 속도와 전체 연결 품질을 평가하여 표시합니다. 
 
+온라인 서버 : https://speed.nanu.cc
 
 **사용기술**
 
