@@ -24,7 +24,7 @@ function startSpeedTest() {
     goButton.style.cursor = 'not-allowed';
     goButton.onclick = null;
 
-    var country = '<?php echo $_SERVER["HTTP_CF_IPCOUNTRY"]; ?>';
+    var country = '사용자 지역 넣기';
 
     var currentDate = new Date();
     var testTime = currentDate.toLocaleTimeString();
