@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'SUITE-Regular', sans-serif;
+    background-color: #f8f9fa;
+    /* Add a light background color */
+    text-align: center;
+}
+
+#loading {
+
+    width: 120px;
+    height: 120px;
+    border: 5px solid #3498db;
+    border-radius: 50%;
+    border-top: 5px solid #fff;
+    animation: spin 2s infinite linear;
+    margin-bottom: 20px;
+}
+
+#goButton,
+#startButton {
+    display: none;
+    width: 120px;
+    /* Increase button size */
+    height: 120px;
+    /* Increase button size */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 120px;
+    /* Center text vertically */
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    
+    /* Add a smooth transition */
+}
+
+#goButton {
+    display: none;
+    border: 5px solid #3498db;
+    color: #3498db;
+    background-color: #fff;
+    /* Add a white background */
+}
+
+#goButton:hover {
+    display: none;
+    background-color: #3498db;
+    /* Change background color on hover */
+    color: #fff;
+    /* Change text color on hover */
+}
+
+#startButton {
+    border: 5px solid #dbd534;
+    color: #dbd534;
+    display: none;
+    background-color: #fff;
+    /* Add a white background */
+}
+
+#startButton:hover {
+    background-color: #dbd534;
+    /* Change background color on hover */
+    color: #fff;
+    /* Change text color on hover */
+}
+
+#results {
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    /* Add some padding */
+    border-radius: 10px;
+    /* Add rounded corners */
+}
+
+.test-box {
+    border: 5px solid #bdbdbd;
+    padding: 20px;
+    /* Add some padding */
+    margin-bottom: 20px;
+    /* Increase margin */
+    text-align: center;
+    border-radius: 10px;
+    /* Add rounded corners */
+    background-color: #fff;
+    /* Add a white background */
+}
+
+.icon {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.warning {
+    color: #f39c12;
+}
+
+.success {
+    color: #2ecc71;
+}
+
+.info {
+    color: #3498db;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
