@@ -1,6 +1,6 @@
 # JsSpeedTest
 
-JS-SpeedTest는 웹 브라우저에서 실행할 수 있는 간단한 인터넷 속도 측정기
+간단한 백엔드 서버로 측정하는 클라이언트 사이드 속도 측정 코드입니다.
 Internet Speed Test With Client Side JS.
 
 Performance API와 Fetch API를 활용하여 네트워크 성능을 평가하고 사용자에게 실시간으로 테스트 결과를 제공합니다. 
