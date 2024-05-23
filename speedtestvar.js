@@ -7,7 +7,7 @@ function pingServer() {
     return testPing;
 }
 
-var toggle_status = true; // 추가된 변수
+var toggle_status = true; 
 
 function startSpeedTest() {
 
@@ -45,11 +45,9 @@ function startSpeedTest() {
 
 function downloadFile(url, fileSize) {
     var cacheBuster = new Date().getTime();
-    var cacheBustedUrl = url + '?cache=' + cacheBuster;
-
+    var cacheBustedUrl = url + '?cache=' + cacheBuster; //브라우저 캐시된것으로 로드하는 것을 막기 위한 캐시버스터로 파일 query 진행행
     var startTime = performance.now();
-
-    if (!toggle_status) return; // 이미 마무리 메시지가 출력되었으면 중단
+    if (!toggle_status) return;
 
     fetch(cacheBustedUrl)
         .then(response => {
@@ -143,24 +141,5 @@ function calculateFinalResult() {
 
     var averageSpeed = totalSpeed / testBoxes.length;
 
-    var finalResultBox = document.createElement('div');
-    finalResultBox.classList.add('test-box', 'info');
-    var icon = document.createElement('div');
-    icon.classList.add('icon');
-
-    if (averageSpeed >= 10) {
-        icon.innerHTML = `<i class="fas fa-check-circle success"></i> 결과 : 매우 좋음`;
-    } else if (averageSpeed >= 5) {
-        icon.innerHTML = `<i class="fas fa-check-circle success"></i> 결과 : 좋음`;
-    } else if (averageSpeed >= 1) {
-        icon.innerHTML = `<i class="fas fa-check-circle success"></i> 결과 : 양호`;
-    } else if (averageSpeed >= 0.3) {
-        icon.innerHTML = `<i class="fas fa-exclamation-triangle warning"></i> 결과 : 느림`;
-    } else {
-        icon.innerHTML = `<i class="fas fa-check-circle success" style="color: #e74c3c;"></i> 결과 : 매우 느림`;
-    }
-
-    finalResultBox.appendChild(icon);
-    finalResultBox.innerHTML += `<div>평균 다운로드 속도: <strong>${averageSpeed.toFixed(2)} Mbps</strong></div>`;
-    resultsDiv.appendChild(finalResultBox);
+    var finalResultBox = document.createElemen료
 }
